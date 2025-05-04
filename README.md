@@ -19,21 +19,25 @@ A high-performance, modular, Firebase-powered real estate web application. This 
 ---
 
 ## 📁 Project Structure
+
+```bash
 src/
-├── assets/ # Static files: CSS, images, etc.
+├── assets/              # Static files: CSS, images, fonts
 ├── core/
-│ ├── data/ # Data repositories, Firebase Firestore access
-│ ├── domain/ # Domain models and logic
-│ ├── network/ # Firebase initialization, API utilities
-│ └── utils/ # Reusable helpers and validators
+│   ├── data/            # Data sources & Firebase access
+│   ├── domain/          # Business models & core logic
+│   ├── network/         # Firebase config & external API clients
+│   └── utils/           # General utilities and helpers
 ├── features/
-│ ├── auth/ # Login, signup, password recovery
-│ ├── properties/ # List, detail, create/edit properties
-│ ├── dashboard/ # User/agent-specific dashboard components
-│ └── search/ # Search and filter features
-├── components/ # Shared UI components (e.g., buttons, cards)
-├── pages/ # Top-level routes
-├── App.js # Main App entry
-└── index.js # React DOM entry point
+│   ├── auth/            # Login, registration, password reset
+│   ├── properties/      # Property listing, details, create/edit
+│   ├── dashboard/       # Agent/user dashboards
+│   └── search/          # Filters, map view, search results
+├── components/          # Reusable UI elements (e.g., Button, Modal)
+├── pages/               # Top-level pages with routing
+├── App.js               # Main application component
+└── index.js             # React DOM entry point
+```
+
 
 
