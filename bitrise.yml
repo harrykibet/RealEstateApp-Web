@@ -57,3 +57,5 @@ app:
   - NODEJS_PROJECT_DIR: /
     opts:
       is_expand: false
+  - GIT_HTTP_USERNAME: $GIT_USERNAME
+  - GIT_HTTP_PASSWORD: $ACCESS_TOKEN
