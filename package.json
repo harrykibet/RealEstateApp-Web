@@ -7,16 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "firebase deploy",
-    "lint": "eslint . --ext .js,.jsx"
+    "deploy": "firebase deploy"
   },
   "keywords": ["real-estate", "react", "firebase", "vite"],
   "author": "Harry Kibet",
   "license": "MIT",
-  "engines": {
-    "node": ">=23.11.0",
-    "npm": ">=10.8.2"
-  },
   "dependencies": {
     "firebase": "^10.0.0",
     "react": "^18.0.0",
