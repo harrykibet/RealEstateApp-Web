@@ -22,21 +22,17 @@ A high-performance, modular, Firebase-powered real estate web application. This 
 
 ```bash
 src/
-├── assets/              # Static files: CSS, images, fonts
-├── core/
-│   ├── data/            # Data sources & Firebase access
-│   ├── domain/          # Business models & core logic
-│   ├── network/         # Firebase config & external API clients
-│   └── utils/           # General utilities and helpers
-├── features/
-│   ├── auth/            # Login, registration, password reset
-│   ├── properties/      # Property listing, details, create/edit
-│   ├── dashboard/       # Agent/user dashboards
-│   └── search/          # Filters, map view, search results
-├── components/          # Reusable UI elements (e.g., Button, Modal)
-├── pages/               # Top-level pages with routing
-├── App.js               # Main application component
-└── index.js             # React DOM entry point
+├── App.jsx              # Root application component and route configuration
+├── main.jsx             # React DOM bootstrapper
+├── assets/              # Static files: images and other media
+│   └── images/
+├── components/          # Shared UI components and presentational pieces
+│   └── ui/
+├── lib/                 # Platform integrations and shared runtime services
+├── pages/               # Page-level views and route entrypoints
+├── services/            # Domain services and feature APIs
+├── styles/              # Global and component-specific styles
+└── tests/               # Unit and integration tests
 ```
 
 
