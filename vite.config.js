@@ -1,10 +1,18 @@
-import { defineConfig } from 'vitest/config'
+const { defineConfig } = require('vite')
+const react = require('@vitejs/plugin-react')
+const path = require('path')
 
-export default defineConfig({
+module.exports = defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
+  },
   test: {
     include: ['src/tests/**/*.{test,spec}.{js,ts,jsx,tsx}'],
-    environment: 'jsdom', // optional, for React DOM,
-     passWithNoTests: true,
+    environment: 'jsdom',
+    passWithNoTests: true
   }
 })
 

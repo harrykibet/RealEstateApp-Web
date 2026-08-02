@@ -1,0 +1,86 @@
+@import './card.css';
+
+/* Global resets and typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #f4f7fa;
+  color: #111827;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.9rem 1.4rem;
+  background-color: #2563eb;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.app-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.eyebrow {
+  color: #2563eb;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.78rem;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  margin-bottom: 1rem;
+  line-height: 1.05;
+}
+
+.page-copy {
+  max-width: 64rem;
+  color: #4b5563;
+}
+
+.status-message {
+  margin-bottom: 1.5rem;
+  color: #4b5563;
+}
+
+.status-error {
+  color: #b91c1c;
+}
+
+.listing-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
